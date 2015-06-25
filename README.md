@@ -1,6 +1,6 @@
-# construx-star
+# construx-copier
 
-Lead Maintainer: [star](star)
+Lead Maintainer: [Matt Edelman](https://github.com/grawk)
 
 [![Build Status](https://travis-ci.org/krakenjs/construx-star.svg?branch=master)](https://travis-ci.org/krakenjs/construx-star)
 [![NPM version](https://badge.fury.io/js/construx-star.png)](http://badge.fury.io/js/construx-star)
