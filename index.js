@@ -18,22 +18,10 @@
 'use strict';
 
 
+
 module.exports = function (options) {
-
-    options.ext = options.ext || 'less';
-    options.dumpLineNumbers = 'comments';
-
     return function (data, args, callback) {
-        var star = data.toString('utf8');
-        var paths = args.paths;
-        var name = args.context.name;
-
-        if (star === 'good') {
-            callback(null, 'star');
-        } else {
-            callback(new Error('Bad star file'));
-        }
-
+        // noop
+        callback(null, data);
     };
-
 };
