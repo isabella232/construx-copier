@@ -22,22 +22,19 @@
 
 var test = require('tap').test,
   path = require('path'),
-  Star = require(path.resolve(__dirname, '..')),
-  star = Star({}),
+  Copier = require(path.resolve(__dirname, '..')),
+  copier = Copier({}),
   fs = require('fs');
 
-test('construx-less', function (t) {
+test('construx-copier', function (t) {
 
-    t.test('processes a good star file', function (t) {
+    t.test('honors its API', function (t) {
         t.plan(1);
-        //get good star file
-        fs.readFile(path.resolve(__dirname, 'star/good.star'), function (err, data) {
-            star(data, {paths: '', context: {name: 'star.compiled'}}, function (err, compiled) {
-                t.equal(-1, 1);
+
+            copier('i am data', {paths: '', context: {name: 'foo'}}, function (err, compiled) {
+                t.equal(compiled, 'i am data');
                 t.end();
             });
-
-        });
 
     });
 
