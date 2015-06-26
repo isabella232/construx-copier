@@ -7,6 +7,8 @@ Lead Maintainer: [Matt Edelman](https://github.com/grawk)
 
 [construx](https://github.com/krakenjs/construx) plugin for copying resources during development of [express](http://expressjs.com/) applications.
 
+construx-copier is essentially a noop which will catch any file not processed by another construx plugin and just copy it verbatim
+
 ## Usage
 
 ### Install
